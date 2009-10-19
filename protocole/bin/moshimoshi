@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+#require 'rubygems'
+require 'ipaddr'
+require 'optparse'
+#require 'packet'
+require 'socket'
+require 'yaml'
+require File.dirname(__FILE__) + '/../lib/digest/crypsh16'
+#require File.dirname(__FILE__) + '/../lib/udp'
+require File.dirname(__FILE__) + '/../lib/moshimoshi'
+
+Moshimoshi::Protocol.new.run
